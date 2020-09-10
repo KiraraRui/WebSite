@@ -7,13 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FrontPageComponent implements OnInit {
 
-  frontpagePic = [];
+  frontPageSlideOne = {"Pic" : "../../assets/FrontPage/SlideOne.png", "Des" : "../../assets/FrontPage/SlideOneDescription"};
+  frontPageSlideTwo = {"Pic" : "../../assets/FrontPage/SlideTwo.jpg", "Des" : "../../assets/FrontPage/SlideTwoDescription.png"};
+  frontPageSlideTree = {"Pic" : "../../assets/FrontPage/SlideTree.png", "Des" : "../../assets/FrontPage/SlideTreeDescription.png"};
   constructor() { }
 
   ngOnInit(): void {
-    for(let i = 0; i <= 0; i++){
-      this.frontpagePic[i] = 0;
-    }
   }
 
 }
