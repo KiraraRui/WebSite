@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FrontPageComponent implements OnInit {
 
+  frontpagePic = [];
   constructor() { }
 
   ngOnInit(): void {
+    for(let i = 0; i <= 0; i++){
+      this.frontpagePic[i] = 
+    }
   }
 
 }
