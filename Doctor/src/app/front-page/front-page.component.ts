@@ -21,7 +21,7 @@ export class FrontPageComponent implements OnInit {
     this.http.get("../../assets/FrontPage/SlideOneDescription.json").subscribe(data =>{
        testTxr = data.total;
     });
-    console.debug("Teset of http Get Json" + testtxr);
+    console.debug("Teset of http Get Json" + testTxr);
     return testTxr;
   }
 }
