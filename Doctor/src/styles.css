@@ -93,17 +93,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-#navbar-primary .navbar-nav {
+.navbar-brand{
   width: 100%;
   text-align: center;
-}
-#navbar-primary .navbar-nav > li {
   display: inline-block;
   float: none;
-}
-#navbar-primary .navbar-nav > li > a {
-  padding-left: 30px;
-  padding-right: 30px;
+    padding-left: 50%;
+  padding-right: 20%;
 }
 
 /* NAV */ /* NAV */ /* NAV */ /* NAV */ /* NAV */
