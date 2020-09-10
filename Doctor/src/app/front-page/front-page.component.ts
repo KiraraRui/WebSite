@@ -12,7 +12,7 @@ export class FrontPageComponent implements OnInit {
 
   ngOnInit(): void {
     for(let i = 0; i <= 0; i++){
-      this.frontpagePic[i] = 
+      this.frontpagePic[i] = 0;
     }
   }
 
