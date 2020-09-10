@@ -1,114 +1,118 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="styles.css" type="text/css">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" type="text/css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="utf-8">
   <title>Doctor</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
 
 
 
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light scrolled awake" *id*="ftco-navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light scrolled awake"
+    *id*="ftco-navbar">
 
     <!--  Show this only on mobile to medium screens  -->
-      <a class="navbar-brand d-lg-none" href="#">Cars</a>
-    
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
+    <a class="navbar-brand d-lg-none" href="/front-page">Cars</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+      aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
     <!--  Use flexbox utility classes to change how the child elements are justified  -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarToggle">
-    
-        <ul class="navbar-nav px-3" >
-          <li class="nav-item">
-            <a class="nav-link active" routerLink="/front-page" routerLinkActive="router-link-active" >Forside <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/salg" >Salg</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/profil']">Profil</a>
-          </li>
-        </ul>
-        
-        
-    <!--   Show this only lg screens and up   -->
-        <a class="navbar-brand d-none d-lg-block px-3 mx-0" [routerLink]="['/front-page']" routerLinkActive="router-link-active" >Cars</a>
-        
-        
-        
-        <ul class="navbar-nav px-3">
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/service']" routerLinkActive="router-link-active" >Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/kontakt']" routerLinkActive="router-link-active" >Kontakt</a>
-          </li>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarToggle">
+
+      <ul class="navbar-nav px-3">
+        <li class="nav-item">
+          <a class="nav-link active" href="/front-page">Forside <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/salg">Salg</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/profil">Profil</a>
+        </li>
+      </ul>
+
+
+      <!--   Show this only lg screens and up   -->
+      <a class="navbar-brand d-none d-lg-block px-3 mx-0" [routerLink]="['/front-page']">Cars</a>
+
+
+
+      <ul class="navbar-nav px-3">
+        <li class="nav-item">
+          <a class="nav-link" href="/service">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/kontakt">Kontakt</a>
+        </li>
         <!--  <li class="nav-item">
             <a class="nav-link" href="#">moreCars</a>
           </li> -->
-        </ul>
+      </ul>
+    </div>
+  </nav>
+
+  <app-root></app-root>
+
+  <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <div class="iconsMid">
+        <div class="social-icons">
+          <a class="social-icon social-icon--github">
+            <i class="fa fa-github"></i>
+            <div class="tooltip">Github</div>
+          </a>
+          <a class="social-icon social-icon--twitter">
+            <i class="fa fa-twitter"></i>
+            <div class="tooltip">Twitter</div>
+          </a>
+          <a class="social-icon social-icon--instagram">
+            <i class="fa fa-instagram"></i>
+            <div class="tooltip">Instagram</div>
+          </a>
+          <a class="social-icon social-icon--linkedin">
+            <i class="fa fa-linkedin"></i>
+            <div class="tooltip">LinkedIn</div>
+          </a>
+          <a class="social-icon social-icon--facebook">
+            <i class="fa fa-facebook"></i>
+            <div class="tooltip">Facebook</div>
+          </a>
+        </div>
       </div>
-    </nav>
-    
-    
- <app-root></app-root>
+      <small>Copyright &copy; Your Website</small>
+      <p>Du finder os på Morsøvej 8, 4700 Næstved
+        Tlf.: 28 70 80 90</p>
+    </div>
 
-              <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-                <div class="container text-center">
-                <div class="iconsMid">
-                  <div class="social-icons">
-                      <a class="social-icon social-icon--github">
-                        <i class="fa fa-github"></i>
-                        <div class="tooltip">Github</div>
-                      </a>
-                      <a class="social-icon social-icon--twitter">
-                        <i class="fa fa-twitter"></i>
-                        <div class="tooltip">Twitter</div>
-                      </a>
-                      <a class="social-icon social-icon--instagram">
-                        <i class="fa fa-instagram"></i>
-                        <div class="tooltip">Instagram</div>
-                      </a>
-                      <a class="social-icon social-icon--linkedin">
-                        <i class="fa fa-linkedin"></i>
-                        <div class="tooltip">LinkedIn</div>
-                      </a>
-                      <a class="social-icon social-icon--facebook">
-                        <i class="fa fa-facebook"></i>
-                        <div class="tooltip">Facebook</div>
-                      </a>
-                    </div>
-                    </div>
-                    <small>Copyright &copy; Your Website</small>
-                    <p>Du finder os på Morsøvej 8, 4700 Næstved
-                      Tlf.: 28 70 80 90</p>
-                  </div>
 
-                    
-              </footer>
+  </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-  crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 
 </body>
+
 </html>
