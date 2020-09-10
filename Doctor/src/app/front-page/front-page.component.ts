@@ -19,7 +19,7 @@ export class FrontPageComponent implements OnInit {
   }
   getTextFile(){
     console.debug("ARgh!!");
-    return this.http.get(this.frontPageSlideOne.Des, {responseType: 'text'});
+    //return this.http.get(this.frontPageSlideOne.Des, {responseType: 'text'});
 
   }
 }
