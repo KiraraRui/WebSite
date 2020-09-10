@@ -1,3 +1,8 @@
+#sticky-footer {
+  flex-shrink: none;
+  }
+  
+
 /* NAV */ /* NAV */ /* NAV */ /* NAV */
 
 .ftco-navbar-light.scrolled.awake {
@@ -93,14 +98,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.navbar-brand{
-  width: 100%;
-  text-align: center;
-  display: inline-block;
-  float: none;
-    padding-left: 50%;
-  padding-right: 20%;
-}
+
 
 /* NAV */ /* NAV */ /* NAV */ /* NAV */ /* NAV */
 
@@ -108,10 +106,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
    /* ICONS*/    /* ICONS*/    /* ICONS*/
 
 
-   #sticky-footer {
-    flex-shrink: none;
-    }
-    
+ 
     .iconsMid{
       display: -webkit-box;
       display: flex;
