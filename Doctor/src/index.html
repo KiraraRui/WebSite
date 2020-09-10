@@ -4,7 +4,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles.css" type="text/css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="utf-8">
@@ -17,55 +17,52 @@
 
 
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light scrolled awake" *id*="ftco-navbar">
 
     <!--  Show this only on mobile to medium screens  -->
-      <a class="navbar-brand d-lg-none" href="#">Navbar</a>
+      <a class="navbar-brand d-lg-none" href="#">Cars</a>
     
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     
     <!--  Use flexbox utility classes to change how the child elements are justified  -->
-      <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarToggle">
     
-        <ul class="navbar-nav">
+        <ul class="navbar-nav px-3" >
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link active" routerLink="/front-page" routerLinkActive="router-link-active" >Forside <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" routerLink="/salg" >Salg</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" [routerLink]="['/profil']">Profil</a>
           </li>
         </ul>
         
         
     <!--   Show this only lg screens and up   -->
-        <a class="navbar-brand d-none d-lg-block" href="#">Navbar</a>
+        <a class="navbar-brand d-none d-lg-block px-3 mx-0" [routerLink]="['/front-page']" routerLinkActive="router-link-active" >Cars</a>
         
         
         
-        <ul class="navbar-nav">
+        <ul class="navbar-nav px-3">
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" [routerLink]="['/service']" routerLinkActive="router-link-active" >Service</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" [routerLink]="['/kontakt']" routerLinkActive="router-link-active" >Kontakt</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
+        <!--  <li class="nav-item">
+            <a class="nav-link" href="#">moreCars</a>
+          </li> -->
         </ul>
       </div>
     </nav>
     
     
-  
-
-  <app-root>
-  </app-root>
+ <app-root></app-root>
 
               <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
                 <div class="container text-center">

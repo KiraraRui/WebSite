@@ -19,7 +19,7 @@ export class FrontPageComponent implements OnInit {
   getTextFile(){
     let testTxr;
     this.http.get("../../assets/FrontPage/SlideOneDescription.json").subscribe(data =>{
-       testTxr = data.total;
+       testTxr = data;
     });
     console.debug("Teset of http Get Json" + testTxr);
     return testTxr;
