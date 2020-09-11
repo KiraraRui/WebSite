@@ -9,6 +9,7 @@ import { KontaktComponent } from './kontakt/kontakt.component';
 import { ProfilComponent } from './profil/profil.component';
 import { SalgComponent } from './salg/salg.component';
 import { ServiceComponent } from './service/service.component';
+import { SalgsProduktComponent } from './salgs-produkt/salgs-produkt.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ServiceComponent } from './service/service.component';
     KontaktComponent,
     ProfilComponent,
     SalgComponent,
-    ServiceComponent
+    ServiceComponent,
+    SalgsProduktComponent
   ],
   imports: [
     BrowserModule,
