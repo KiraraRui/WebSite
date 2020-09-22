@@ -15,97 +15,127 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
+
+
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light scrolled awake"
-    *id*="ftco-navbar">
-    0
-    <!--  Show this only on mobile to medium screens  -->
-    <a class="navbar-brand d-lg-none" href="/front-page">Cars</a>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
-      aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="index.html"><span>Bildoktoren</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="/"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
 
-    <!--  Use flexbox utility classes to change how the child elements are justified  -->
-    <div class="collapse navbar-collapse justify-content-center" id="navbarToggle">
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li><a href="/front-page">Forside</a></li>
+          <li><a href="/salg">Salg</a></li>
+          <li><a href="/service">Services</a></li>
+          <li><a href="/profil">Profil</a></li>
+          <li><a href="/kontakt">kontakt</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/login">Login</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
 
-      <ul class="navbar-nav px-3">
-        <li class="nav-item">
-          <a class="nav-link active" href="/front-page">Forside <span class="sr-only">(current)</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="/salg">Salg</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/profil">Profil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/blog">Blog</a>
-        </li>
-      </ul>
-
-
-      <!--   Show this only lg screens and up   -->
-      <a class="navbar-brand d-none d-lg-block px-3 mx-0" [routerLink]="['/front-page']">Cars</a>
-
-
-
-      <ul class="navbar-nav px-3">
-        <li class="nav-item">
-          <a class="nav-link" href="/service">Service</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/kontakt">Kontakt</a>
-        </li>
-        <li>
-          <a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a>
-        </li>
-
-        <!--  <li class="nav-item">
-            <a class="nav-link" href="#">moreCars</a>
-          </li> -->
-      </ul>
     </div>
-  </nav>
+  </header><!-- End Header -->
+
+
 
   <app-root></app-root>
 
-  <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-    <div class="container text-center">
-      <div class="iconsMid">
-        <div class="social-icons">
-          <a class="social-icon social-icon--github">
-            <i class="fa fa-github"></i>
-            <div class="tooltip">Github</div>
-          </a>
-          <a class="social-icon social-icon--twitter">
-            <i class="fa fa-twitter"></i>
-            <div class="tooltip">Twitter</div>
-          </a>
-          <a class="social-icon social-icon--instagram">
-            <i class="fa fa-instagram"></i>
-            <div class="tooltip">Instagram</div>
-          </a>
-          <a class="social-icon social-icon--linkedin">
-            <i class="fa fa-linkedin"></i>
-            <div class="tooltip">LinkedIn</div>
-          </a>
-          <a class="social-icon social-icon--facebook">
-            <i class="fa fa-facebook"></i>
-            <div class="tooltip">Facebook</div>
-          </a>
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/front-page">Forside</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/salg">Salg</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/profil">Profil</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/service">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/kontakt">Kontakt</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Service 1</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Service 2</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Service 3</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Service 4</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Service 5</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>find os</h4>
+            <p>
+              addresse nr <br>
+              addresse by<br>
+              cvr nr <br><br>
+              <strong>Phone:</strong> Tlf<br>
+              <strong>Email:</strong> Mail<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>About bildoktoren</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
+              darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="iconsMid">
+              <div class="social-icons">
+                <a class="social-icon social-icon--github">
+                  <i class="fa fa-github"></i>
+                  <div class="tooltip">Github</div>
+                </a>
+                <a class="social-icon social-icon--twitter">
+                  <i class="fa fa-twitter"></i>
+                  <div class="tooltip">Twitter</div>
+                </a>
+                <a class="social-icon social-icon--instagram">
+                  <i class="fa fa-instagram"></i>
+                  <div class="tooltip">Instagram</div>
+                </a>
+                <a class="social-icon social-icon--linkedin">
+                  <i class="fa fa-linkedin"></i>
+                  <div class="tooltip">LinkedIn</div>
+                </a>
+                <a class="social-icon social-icon--facebook">
+                  <i class="fa fa-facebook"></i>
+                  <div class="tooltip">Facebook</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-      <small>Copyright &copy; Your Website</small>
-      <p>Du finder os på Morsøvej 8, 4700 Næstved
-        Tlf.: 28 70 80 90</p>
     </div>
 
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>firma</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://github.com/ShizukuKiri/WebSite.git">ThinkTech</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
 
-  </footer>
+
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
