@@ -10,6 +10,9 @@ import { ProfilComponent } from './profil/profil.component';
 import { SalgComponent } from './salg/salg.component';
 import { ServiceComponent } from './service/service.component';
 import { SalgsProduktComponent } from './salgs-produkt/salgs-produkt.component';
+import { BlogComponent } from './blog/blog.component';
+import { LoginComponent } from './login/login.component';
+import { BlogpostComponent } from './blogpost/blogpost.component';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { SalgsProduktComponent } from './salgs-produkt/salgs-produkt.component';
     ProfilComponent,
     SalgComponent,
     ServiceComponent,
-    SalgsProduktComponent
+    SalgsProduktComponent,
+    BlogComponent,
+    LoginComponent,
+    BlogpostComponent
   ],
   imports: [
     BrowserModule,
